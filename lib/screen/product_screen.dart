@@ -1,11 +1,9 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shopping_app/screen/add_product.dart';
 import '../widget/app_drawer.dart';
-import '../widget/badge.dart';
 
+import '../widget/badge.dart';
 import '../widget/product_grid.dart';
 import '../providers/chart.dart';
 
@@ -53,7 +51,7 @@ class _ProductScreenState extends State<ProductScreen> {
               ),
             ],
           ),
-          Badge(
+          Badges(
             _count.itemCount.toString(),
           ),
         ],
